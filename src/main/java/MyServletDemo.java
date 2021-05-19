@@ -64,7 +64,6 @@ public class MyServletDemo extends HttpServlet
 	  	if(u.equals(username) || p.equals(password))
 	  	  {
 	  		response.setContentType("text/html");
-	  		//PrintWriter pw = response.getWriter();
 	  		request.setAttribute("username", username);
 	  		request.setAttribute("password", password);
 	  		RequestDispatcher rd = request.getRequestDispatcher("/sucess.jsp");
